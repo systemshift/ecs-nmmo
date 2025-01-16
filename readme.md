@@ -59,6 +59,24 @@ class ECSEmbedding:
             'temporal': {},      # Time-based patterns
             'categorical': {}    # Classifications
         }
+        
+        self.systems = {
+            'causal': {         # Cause-effect relationships
+                'preconditions': [],  # Required states/components
+                'effects': [],        # Resulting state changes
+                'constraints': []     # Rules and limitations
+            },
+            'interaction': {    # Entity interaction patterns
+                'participants': [],   # Involved entity types
+                'rules': [],         # Interaction rules
+                'outcomes': []       # Possible results
+            },
+            'transition': {     # State transition patterns
+                'states': [],        # Possible states
+                'triggers': [],      # Transition conditions
+                'probabilities': []  # Likelihood of transitions
+            }
+        }
 ```
 
 ## Getting Started
